@@ -43,7 +43,9 @@ before layering on any complexity.
 ## Milestone: ✅ Complete
 Two VMs (Ubuntu Server, with Kali to follow) reachable via SSH, firewall 
 active, snapshot taken.
+![UFW firewall active, OpenSSH allowed](./ufw-status.png)
 
+![Successful SSH connection into the VM](./ssh-connection-success.png)
 ---
 *Part of an ongoing home lab project — see root README for the full 
 [learning path](link-to-your-doc-if-you-publish-it) across all levels.*
