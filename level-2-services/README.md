@@ -15,9 +15,11 @@ delivered to users through Group Policy.
   Internal Network named `labnet` (192.168.10.10/24) for lab traffic. The client sits on
   `labnet` only.
 - **DHCP:** scope 192.168.10.100 to 192.168.10.200 (/24), with DNS pointing at DC01
-- **Directory:** `LabUsers` OU, a test user, and a `FileShare-Users` security group
-- **File services:** `C:\Shares\Company` shared as `\\dc01\Company`
-- **Group Policy:** "Map Company Drive" linked to the `LabUsers` OU, mapping the share as `S:`
+ ![DHCP scope with the client's address lease](./DHCP-leases.png)
+- **Directory:** `LabUsers` OU, a test user, and a `FileShare-Users` security group ![LabUsers OU in Active Directory Users and Computers](./LabusersOU.png)
+- **File services:** `C:\Shares\Company` shared as `\\dc01\Company` ![NTFS permissions giving the security group Modify access](./ModifyPermissions.png)
+- **Group Policy:** "Map Company Drive" linked to the `LabUsers` OU, mapping the share as `S:` ![Group Policy Management showing the Map Company Drive GPO](./GP.png)
+
 
 ```
          Internet
@@ -37,6 +39,7 @@ delivered to users through Group Policy.
   | DHCP lease 192.168.10.x |
   +-----------------------+
 ```
+![DC ipconfig showing the NAT and lab adapters](./dc-ipconfig.png)
 
 ## Steps Taken
 1. Created the Server 2025 VM and installed it with Desktop Experience
