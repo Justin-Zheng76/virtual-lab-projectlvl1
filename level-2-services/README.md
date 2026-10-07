@@ -54,6 +54,7 @@ delivered to users through Group Policy.
    and NTFS Modify permission for `FileShare-Users` only
 10. Created a GPO linked to `LabUsers` that maps `\\dc01\Company` as drive `S:`
 11. Verified the drive appears at login, then took snapshots of both VMs
+![Mapped drive on the client](./client-mapped-drive.png)
 
 ## Troubleshooting Notes
 - **Black screen after the install's first restart:** the optical drive was ahead of the
