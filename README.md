@@ -18,7 +18,7 @@ studying for exams.
 | Level | Focus | Status |
 |---|---|---|
 | [Level 1](./level-1-virtualization) | Virtualization & networking fundamentals | ✅ Complete |
-| [Level 2](./level-2-services) | Core enterprise services (AD, DNS, DHCP, file server) | 🔲 Not started |
+| [Level 2](./level-2-services) | Core enterprise services (AD, DNS, DHCP, file server) | ✅ Complete |
 | [Level 3](./level-3-segmentation) | Segmentation, proxies & containers | 🔲 Not started |
 | [Security Layer](./security-layer) | Traffic simulation & incident response | 🔲 Not started |
 
